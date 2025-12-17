@@ -1,0 +1,5 @@
+{
+  "name": "LoRA-GPT2 Lab",
+  "description": "An interactive educational simulation of fine-tuning GPT-2 with LoRA for sentiment analysis.",
+  "requestFramePermissions": []
+}
