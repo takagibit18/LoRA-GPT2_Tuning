@@ -1,9 +1,10 @@
+
 import React from 'react';
 
 export const ArchitectureViz: React.FC = () => {
   return (
     <div className="relative w-full h-64 bg-slate-900 rounded-lg overflow-hidden border border-slate-700 shadow-inner flex items-center justify-center">
-      <div className="absolute top-2 left-3 text-xs text-slate-400 font-mono">LoRA Architecture Visualization</div>
+      <div className="absolute top-2 left-3 text-xs text-slate-400 font-mono">LoRA 架构可视化</div>
       
       {/* Main Flow */}
       <div className="flex flex-col items-center gap-4 z-10">
@@ -19,7 +20,7 @@ export const ArchitectureViz: React.FC = () => {
           
           {/* Frozen Weights Path */}
           <div className="flex flex-col items-center relative group">
-            <div className="absolute -top-6 text-[10px] text-slate-400 opacity-0 group-hover:opacity-100 transition-opacity">Frozen Pretrained</div>
+            <div className="absolute -top-6 text-[10px] text-slate-400 opacity-0 group-hover:opacity-100 transition-opacity">已冻结的预训练参数</div>
             <div className="w-24 h-16 border-2 border-slate-500 bg-slate-800 rounded flex items-center justify-center text-slate-300 font-mono text-sm shadow-[0_0_15px_rgba(100,116,139,0.2)]">
               W_pre
             </div>
@@ -30,7 +31,7 @@ export const ArchitectureViz: React.FC = () => {
 
           {/* LoRA Path */}
           <div className="flex flex-col items-center relative group">
-             <div className="absolute -top-6 text-[10px] text-amber-400 opacity-0 group-hover:opacity-100 transition-opacity">Trainable LoRA</div>
+             <div className="absolute -top-6 text-[10px] text-amber-400 opacity-0 group-hover:opacity-100 transition-opacity">可训练 LoRA 参数</div>
              <div className="flex flex-col gap-1 items-center bg-amber-900/20 p-2 rounded border border-amber-700/50">
                 <div className="w-20 h-6 border border-amber-500 bg-amber-600/20 rounded flex items-center justify-center text-amber-500 font-mono text-xs">
                     B (d x r)

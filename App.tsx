@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { TrainingDashboard } from './components/TrainingDashboard';
 import { Documentation } from './components/Documentation';
@@ -11,14 +12,14 @@ const App: React.FC = () => {
     <div className="min-h-screen flex flex-col">
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white border-b border-slate-200 shadow-sm backdrop-blur-md bg-opacity-90">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+        <div className="max-w-77xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white">
               <BrainIcon className="w-5 h-5" />
             </div>
             <h1 className="text-xl font-bold text-slate-800 tracking-tight">
-              LoRA <span className="text-blue-600">Lab</span>
-              <span className="ml-2 text-xs font-normal text-slate-500 border border-slate-200 px-2 py-0.5 rounded-full">Experiment v1.0</span>
+              LoRA <span className="text-blue-600">实验室</span>
+              <span className="ml-2 text-xs font-normal text-slate-500 border border-slate-200 px-2 py-0.5 rounded-full">入门实验 v1.0</span>
             </h1>
           </div>
           
@@ -32,7 +33,7 @@ const App: React.FC = () => {
               }`}
             >
               <ChartIcon className="w-4 h-4" />
-              Experiment
+              实验中心
             </button>
             <button
               onClick={() => setCurrentView(AppView.DOCUMENTATION)}
@@ -43,7 +44,7 @@ const App: React.FC = () => {
               }`}
             >
               <BookIcon className="w-4 h-4" />
-              Documentation
+              学习文档
             </button>
           </nav>
         </div>
